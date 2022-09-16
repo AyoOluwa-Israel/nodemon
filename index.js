@@ -47,14 +47,14 @@ app.post("/", async (req, res) => {
 
   const mailData = {
     from: {
-      name: `${firstName} ${lastName}`,
+      name: "IzzyTest",
       address: "ayooluwa.israel@dynamixity.com",
     },
     replyTo: "ayooluwa.israel@dynamixity.com",
     to: email,
     subject: `form message`,
-    text: message,
-    html: `${message}`,
+    text: "message",
+    html: "message",
   };
 
   await new Promise((resolve, reject) => {
